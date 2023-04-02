@@ -1,0 +1,43 @@
+header{
+    position: relative;
+    height: 70px;
+}
+main{
+    margin-bottom: 10px;
+}
+
+.nav-container .menu-icon{
+
+    position: absolute;
+    display: none;
+
+}
+.nav-container .logo-yardsale{
+    margin-left: 10px;
+    width: 100px;
+    height: 57px;
+}
+
+.main__sector-busqueda-barra{
+    position: absolute;
+    display: none;
+
+}
+.main__sector-busqueda-opciones{
+    width: 60%;
+    margin-top: 0;  
+    top: 40px;  
+    justify-content: space-evenly;    
+}
+
+.main__sector-images .title{
+    position: absolute;
+    display: none;
+}
+
+.product-img{
+
+    width: 220px;    
+    height: 220px;
+
+}
