@@ -1,0 +1,239 @@
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black:#000000;
+    --white: #FFFFFF;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --dark: #232830;
+    --hospital-green: #ACD9B2;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--text-input-field);
+}
+
+header{    
+    height: 50px;   
+    background-color: #FFFFFF; 
+    box-shadow: 10px 0px 3px var(--dark);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+}
+
+.inactive{
+    
+    display: none;
+
+}
+/*aside del menu de la izquierda*/
+.aside-menu{
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+    background-color: #FFFFFF;
+}
+.aside__icon-menu{
+    width: 80%;
+    display: flex;   
+    flex-direction: column;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 10px;      
+    border-bottom: 1px solid rgba(175, 175, 175, 0.1) ;
+}
+.aside__icon-menu img{
+    
+    align-self: flex-end;
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.aside__icon-menu h2{
+    margin-top: 5px;    
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+.aside__icon-menu a{
+    
+    font-weight: bolder;
+    color: var(--black);
+    text-decoration: none;
+    margin: 25px;
+    margin-left: 10px;    
+}
+.aside__icon-menu-orders{
+    width: 80%;
+    display: flex;   
+    flex-direction: column;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 10px;   
+    margin-bottom: 15px;   
+
+}
+
+.aside__icon-menu-orders a{
+    font-weight: bolder;
+    color: var(--black);
+    text-decoration: none;
+    margin: 25px;   
+    margin-left: 10px;  
+}
+
+.aside__icon-menu-correo{
+    width: 80%;
+    display: flex;   
+    flex-direction: column;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 10px;   
+    margin-bottom: 15px; 
+}
+
+.aside__icon-menu-correo{
+    font-size: 14px;
+    margin-top: 50px;
+    padding-left: 23px;
+
+}
+.aside__icon-menu-correo a{
+    text-decoration: none;
+    color: var(--hospital-green);
+
+}
+
+/*main el sector de la busqueda*/
+
+.main__sector-busqueda{
+    display: flex;
+    justify-content: center;   
+    margin-top: 10px ;  
+
+}
+
+.main__sector-busqueda-barra{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main__sector-busqueda-barra img{
+
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.main__sector-busqueda-barra input{
+    height: 20px;  
+    width: 80% ;
+    max-width: 400px;         
+    background-color: rgb(231, 231, 231);      
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+
+}
+.main__sector-busqueda-barra input::placeholder{
+    color: rgb(175, 175, 175);
+}
+
+.main__sector-busqueda-opciones{
+   position: absolute;
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 40px;
+   color: rgb(175, 175, 175);
+   font-weight: 500;   
+
+}
+.active-color{
+    padding: 1px 12px;
+    color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+    border-radius: 10px;    
+}
+
+.main__sector-images .title{ 
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;   
+    
+}
+.p-class{
+    color: rgb(175, 175, 175);
+}
+.p-icon{    
+    width: 10px;
+    height: 10px;
+    margin-top: 7px;
+    margin-left: 4px;
+    transform: rotate(90deg);
+    background-image: url('./asset/logos/icons/flechita.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* sector donde empieza las imagenes*/
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,120px);
+   /* grid-template-rows: repeat(auto-fit,150px);*/
+    justify-content: center;
+    align-items: center;  
+    gap: 25px; 
+    margin-bottom: 30px;
+    
+}
+.product-card{
+   margin-top: 20px; 
+}
+.card-info-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.card-info-container .peso{
+    font-weight: bolder;
+}
+.card-info-container .nombre{
+    color: rgb(175, 175, 175);
+}
+
+.product-img{    
+    width: 120px;    
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.product-card p{
+    align-self: flex-start;
+    justify-self: flex-start;
+
+}
+
+.product-logo img{
+    width:35px;
+    height:35px;
+}
+
+
+
