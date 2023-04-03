@@ -39,18 +39,20 @@ header{
 /*aside del menu de la izquierda*/
 
 .aside-menu{
+    z-index: 500;
     position: absolute;
     width: 100%;
     height: 100%;    
     background-color: #FFFFFF;
 }
+
 .aside__icon-menu{
     width: 80%;
     display: flex;   
     flex-direction: column;
     text-decoration: none;
     margin: 0 auto;
-    margin-top: 10px;      
+    margin-top: 30px;      
     border-bottom: 1px solid rgba(175, 175, 175, 0.1) ;
 }
 .aside__icon-menu img{
@@ -193,7 +195,6 @@ header{
     display: flex;
     justify-content: center;   
     margin-top: 10px ;  
-
 }
 
 .main__sector-busqueda-barra{
@@ -227,6 +228,7 @@ header{
 }
 
 .main__sector-busqueda-opciones{
+   
    position: absolute;
    width: 90%;
    display: flex;
