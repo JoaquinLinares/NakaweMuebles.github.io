@@ -122,7 +122,8 @@ header{
 /*aside del carrito de la derecha*/
 .aside-carrito{
     
-    position: absolute;    
+    z-index: 50;
+    position: absolute;         
     width: 100%;
     height: 83%;  
     background-color: #FFFFFF;    

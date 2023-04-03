@@ -5,9 +5,16 @@ const asidecarrito = document.querySelector('.aside-carrito');
 
 
 iconmenu.addEventListener('click',aside_menu);
-carritoicon.addEventListener('click',asidecarrito);
+carritoicon.addEventListener('click',aside_carrito);
 
-function aside_menu(){
-    asidemenu.classList.toggle('inactive'); 
+function aside_menu(){   
+    asidemenu.classList.toggle('inactive');
+    asidecarrito.classList.add('inactive');
       
+}
+
+function aside_carrito(){
+    asidecarrito.classList.toggle('inactive');
+    asidemenu.classList.add('inactive');
+
 }

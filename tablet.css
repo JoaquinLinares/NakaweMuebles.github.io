@@ -39,5 +39,10 @@ main{
 
     width: 220px;    
     height: 220px;
-
+}
+.aside-carrito{
+    width: 50%;
+    top: 71px;
+    left: calc(50%);
+    
 }

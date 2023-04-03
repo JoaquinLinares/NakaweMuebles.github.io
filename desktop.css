@@ -1,0 +1,18 @@
+.carrito-container-img img{
+    width: 100px;
+    height: 100px;
+}
+.aside-carrito{
+    left: calc(60%);
+    width: 40%;
+    height: 90%;
+}
+.carrito-container-img div{
+    font-size: 22px;
+}
+.total-pago{
+    font-size: 22px;
+}
+.button{
+    font-size: 22px;
+}
