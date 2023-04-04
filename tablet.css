@@ -43,6 +43,8 @@ main{
 .aside-carrito{
     width: 50%;
     top: 71px;
-    left: calc(50%);
-    
+    left: calc(50%);    
+}
+.carrito-icon:hover{
+    cursor: pointer;
 }
