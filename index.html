@@ -5,152 +5,452 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nakawé Muebles</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/jpg" href="./asset/logos/NakaweMuebles.jpg" >
-    <link rel="stylesheet" href="./style.css">    
-    <link rel="stylesheet" href="./tablet.css" media="(min-width: 596px)">    
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./desktop.css" media="(min-width:850px)">
+    <link rel="stylesheet" href="./style.css">  
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       
+    
 </head>
 <body>
+    <!-- navbar top -->
+    <header class="container borrar">
+        <div class="navbar-top"> 
 
-    <header>
-        <nav class="nav-container">
+            <div class="logo">
+                <h3>Nakawé Muebles</h3>
+            </div>
 
-        <p class="logo-nakawe"> <span></span>Nakawé Muebles</p>
-        <img class="menu-icon" src="./asset/logos/icons/icon_menu.svg" >        
+            <div class="social-link">
+                <i><img src="./assets/imagenes/twitter.png" alt="" width="30px"></i>
+                <i><img src="./assets/imagenes/facebook.png" alt="" width="30px"></i>
+                <i><img src="./assets/imagenes/google-plus.png" alt="" width="30px"></i>
+            </div>
 
-        </nav>
+
+        </div>
+    </header>     
+
+    <!-- Aside de ver mas Productos -->
+    
+    <div class="container aside-moreproduct inactive">
         
-    </header>
+        <div class="aside-vermas-header">            
+            <p>Nakawé Muebles</p>
+        </div>
 
-<aside class=" aside-menu inactive">
-        
-    <div class="aside__icon-menu inactive">           
-            
-         <a id="click-sector1"  href="#mesadas">Mesadas</a>
-         <a id="click-sector2"  href="#sillones">Sillones</a>
-         <a id="click-sector3"  href="#muebles">Muebles</a>            
-         <a id="click-sector4"  href="#combos">Combos<a>                     
-            
-    </div>        
-    <div class="aside__icon-menu-correo">
-         <a href="#">Contáctanos</a>
-        <a href="#">Sobre nosotros</a>             
-        <p>NakaweMuebles@gmail.com</p>
-            
+        <h3 class="text-center ver-mas-title" style="margin-top: 50px;"></h3>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card one" id="c">
+                    <span class="aside-eye" id="aside-1"><i class="fa-solid fa-eye"></i></span>
+                    <div class="ver-mas-img1"></div> <!--imagen agregada con javascript-->
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Best Sofa</h3>
+                        <p class="card-text text-center">$1000.50</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="aside-eye" id="aside-2"><i class="fa-solid fa-eye"></i></span>
+                    <div class="ver-mas-img2"></div> <!--imagen agregada con javascript-->
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">New Sofa</h3>
+                        <p class="card-text text-center">$100.50</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="aside-eye" id="aside-3"><i class="fa-solid fa-eye"></i></span>
+                    <div class="ver-mas-img3"></div> <!--imagen agregada con javascript-->
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">New Chair</h3>
+                        <p class="card-text text-center">$300.20</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="aside-eye" id="aside-4"><i class="fa-solid fa-eye"></i></span>
+                    <div class="ver-mas-img4"></div> <!--imagen agregada con javascript-->
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Modern Chair</h3>
+                        <p class="card-text text-center">$500.50</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="aside-eye" id="aside-5"><i class="fa-solid fa-eye"></i></span>
+                    <div class="ver-mas-img5"></div> <!--imagen agregada con javascript-->
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Best Sofa</h3>
+                        <p class="card-text text-center">$200.50</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="aside-eye" id="aside-6"><i class="fa-solid fa-eye"></i></span>
+                    <div class="ver-mas-img6"></div> <!--imagen agregada con javascript-->
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Sofa Chair</h3>
+                        <p class="card-text text-center">$100.50</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="aside-eye" id="aside-7"><i class="fa-solid fa-eye"></i></span>
+                    <div class="ver-mas-img7"></div> <!--imagen agregada con javascript-->
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Table Chair</h3>
+                        <p class="card-text text-center">$150.50</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="aside-eye" id="aside-8"><i class="fa-solid fa-eye"></i></span>
+                    <div class="ver-mas-img8"></div> <!--imagen agregada con javascript-->
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Hanging Chair</h3>
+                        <p class="card-text text-center">$500.60</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
-</aside>  
 
-<aside class="aside-info inactive">   
+    <!-- aside de info de img -->
+    <aside class="aside-info inactive">           
     
-
-    <span class="close" ><img src="./asset/logos/icons/cerrar-definitivo.png" alt=""></span>
-    <div class="slider" id="slider"> 
-        <div class="slider--section">       
-            <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="foto" class="slider--img">
+        <span class="close" ><img src="./assets/imagenes/cerrar-definitivo.png" alt=""></span>
+        <div class="slider" id="slider"> 
+            <div class="slider--section img-uno">       
+                <!-- <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="foto" class="slider--img"> -->
+            </div>  
+            <div class="slider--section img-dos">       
+                <!-- <img src="https://http2.mlstatic.com/D_NQ_NP_993421-MLA53156433282_012023-W.jpg" alt="foto" class="slider--img"> -->
+            </div> 
+            <div class="slider--section img-tres">       
+                <!-- <img src="https://www.qloud.ar/SITES/IMG/joy-div-computers-09-2021/236_12-10-2022-06-10-23-draconic-3.jpg" alt="foto" class="slider--img"> -->
+            </div> 
+            <div class="slider--section img-cuatro">       
+                <!-- <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/149/185/products/ef2e33d3-a3d7-46b6-ac5a-86e125cd4e34-ef341d5b17c2ce157216793523377531-640-0.webp" alt="foto" class="slider--img"> -->
+            </div> 
         </div>  
-        <div class="slider--section">       
-            <img src="https://http2.mlstatic.com/D_NQ_NP_993421-MLA53156433282_012023-W.jpg" alt="foto" class="slider--img">
-        </div> 
-        <div class="slider--section">       
-            <img src="https://www.qloud.ar/SITES/IMG/joy-div-computers-09-2021/236_12-10-2022-06-10-23-draconic-3.jpg" alt="foto" class="slider--img">
-        </div> 
-        <div class="slider--section">       
-            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/149/185/products/ef2e33d3-a3d7-46b6-ac5a-86e125cd4e34-ef341d5b17c2ce157216793523377531-640-0.webp" alt="foto" class="slider--img">
-        </div> 
-    </div>  
-    <div class="slider-btn rigth" id="btn-rigth">&#62;</div>
-    <div class="slider-btn left" id="btn-left">&#60;</div>
-
-    <div class="slider-precio-contacto">
-        <div class="slider-title">
-            <p>Sillon termico negro<span>(12x6)</span> </p>
+        <div class="slider-btn rigth" id="btn-rigth">&#62;</div>
+        <div class="slider-btn left" id="btn-left">&#60;</div>
+    
+        <div class="slider-precio-contacto">
+            <div class="slider-title">
+                <p>Sillon termico negro<span>(12x6)</span> </p>
+            </div>
+            <div class="slider-contacto">
+                <p id="price">Precio:<span> $120.000</span></p>
+                <button> <a href="#">Contactar</a>  <i class="fa-brands fa-whatsapp"></i></button>
+            </div>
         </div>
-        <div class="slider-contacto">
-            <p>Precio:<span> $120.000</span></p>
-            <button>Contactar  <i class="fa-brands fa-whatsapp"></i></button>
+    
+       <table>
+            
+            <tr >
+                <th class="si">Modelo</th><td class="no">Reclinable simple</td>
+            </tr>       
+            
+            <tr >
+                <th class="no">Marca</th><td>Acme</td>
+            </tr>
+            <tr>
+                <th class="si">Color</th><td class="no">Negro</td>
+            </tr>
+            <tr>
+                <th class="no">Material de las patas</th><td>Plastico</td>
+            </tr>
+            <tr>
+                <th class="si">Color de las patas</th><td class="no">negro</td>
+            </tr>          
+    
+       </table>
+    
+        <div class="aside__info-description">
+            <h2>Detalles</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae voluptatum saepe, natus maxime dolorem nisi sapiente iure architecto eum! Nihil sunt assumenda ipsum, placeat nulla ad. Quidem, modi neque!</p>   
+                      
+        </div>
+       
+    </aside>  
+
+    <!-- main content -->
+
+    <div class="main-content borrar">
+        <nav class="navbar" id="navbar-color">
+           <div class="container-ul ">        
+          
+            <!-- Navbar links -->
+            <div class="container-links">
+              <ul class="ul-container-links">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#tienda">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mesadas=">Mesadas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sillas=">Sillas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sillones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#muebles=">Muebles</a>
+                </li>
+              </ul>
+            </div>
+           </div> 
+        </nav>
+
+
+          <div class="content">
+            <h1>Todo lo que necesitas
+                <br> Modelos Mordernos
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minus modi illum cumque velit consectetur?</p>
+            
+          </div>
+          
+    </div>
+    <!-- main content -->
+
+    <!-- card1 -->
+    <div class="container borrar">
+        <h3 class="text-center" style="padding-top: 30px;">SERVICES WE OFFER</h3>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="./assets/imagenes/c1.png" alt="" class="card assets/imagenes-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">CUSTOM MENUS</h5>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam vitae facere eius modi iure possimus, soluta ea inventore. Omnis!</p>
+                        <div id="btn2" class="text-center"><button>Ver más</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="./assets/imagenes/c2.png" alt="" class="card assets/imagenes-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">SMARTEST WAY</h5>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam vitae facere eius modi iure possimus, soluta ea inventore. Omnis!</p>
+                        <div id="btn2" class="text-center"><button>Ver más</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="./assets/imagenes/c3.png" alt="" class="card assets/imagenes-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">USER FRIENDLEY</h5>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam vitae facere eius modi iure possimus, soluta ea inventore. Omnis!</p>
+                        <div id="btn2" class="text-center"><button>Ver más</button></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- card1 -->
 
-   <table>
-        
-        <tr >
-            <th class="si">Modelo</th><td class="no">Reclinable simple</td>
-        </tr>       
-        
-        <tr >
-            <th class="no">Marca</th><td>Acme</td>
-        </tr>
-        <tr>
-            <th class="si">Color</th><td class="no">Negro</td>
-        </tr>
-        <tr>
-            <th class="no">Material de las patas</th><td>Plastico</td>
-        </tr>
-        <tr>
-            <th class="si">Color de las patas</th><td class="no">negro</td>
-        </tr>          
-
-   </table>
-
-    <div class="aside__info-description">
-        <h2>Detalles</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae voluptatum saepe, natus maxime dolorem nisi sapiente iure architecto eum! Nihil sunt assumenda ipsum, placeat nulla ad. Quidem, modi neque!</p>    
-           <p>Precio</p>        
+    <!-- card2 -->
+    <div class="container borrar">
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tpc">
+                    <img src="./assets/imagenes/ch.png" alt="" class="card assets/imagenes-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-titel">Best Chair</h4>
+                        <p class="card-text">Lorem ipsum dolor.</p>
+                        <div id="btn2"><button id="sillas">Ver más</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tpc">
+                    <img src="./assets/imagenes/sf.png" alt="" class="card assets/imagenes-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-titel">Sofa</h4>
+                        <p class="card-text">Lorem ipsum dolor.</p>
+                        <div id="btn2"><button id="muebles">Ver más</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tpc">
+                    <img src="./assets/imagenes/work desk.png" alt="" class="card assets/imagenes-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-titel">Work Desk</h4>
+                        <p class="card-text">Lorem ipsum dolor.</p>
+                        <div id="btn2"><button id="mesadas">Ver más</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-   
-</aside>  
+    <!-- card2 -->
 
+    <!-- card3 -->
+    <div class="container borrar" >
+        <h3 class="text-center" id="tienda" style="margin-top: 50px;">Productos Nuevos</h3>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="eyes" id="1"><i class="fa-solid fa-eye"></i></span>
 
-    <main id="main">
-        
-        <section class="main__slider-frame">
-            <h5 id="title" class="title">Todo lo que buscas para que tu hogar sea tu lugar favorito ❤️</h5>
-            <ul>
-                <li><img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bici"></li>
-                <li><img src="https://s3-sa-east-1.amazonaws.com/saasargentina/oaPmQNJPQeMZynN9AOk5/imagen" alt="bici"></li>
-                <li><img src="https://infonegocios.info/content/images/2023/02/12/362829/ASUS-intel.jpg" alt="bici"></li>
-                <li><img src="https://d2r9epyceweg5n.cloudfront.net/stores/415/369/products/mueble-guardado-2-puertas-corredizas-y-cajon1-7dd92b1977cbb6b35b15771283551651-1024-1024.jpg" alt="bici"></li>
-            </ul>
-        </section>
+                    <div class="imagen-principal-uno" ></div> <!--imagen agregado javascript-->
 
-
-        <section class="main__sector-images-mesadas">
-            <h1 id="mesadas" class="mesadas">Mesadas</h1>
-                <div class="card-container-mesadas">                         
-                    <!--HTML creado con javascript-->
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Best Sofa</h3>
+                        <p class="card-text text-center">$1000.50</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
                 </div>
-        </section> 
-
-        <section class="main__sector-images-sillones">
-            <h1 id="sillones" class="mesadas">Sillones</h1>
-                <div class="card-container-sillones">                         
-                    <!--HTML creado con javascript-->
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="eyes" id="2"><i class="fa-solid fa-eye"></i></span>                    
+                    <div class="imagen-principal-dos"></div> <!--imagen agregado javascript-->
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">New Sofa</h3>
+                        <p class="card-text text-center">$100.50</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
                 </div>
-        </section>  
-
-        <section class="main__sector-images-muebles">
-            <h1 id="muebles" class="mesadas">Muebles</h1>
-                <div class="card-container-muebles">                         
-                    <!--HTML creado con javascript-->
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="eyes" id="3"><i class="fa-solid fa-eye"></i></span>
+                    <img src="./assets/imagenes/card3.png" alt="" class="card assets/imagenes-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">New Chair</h3>
+                        <p class="card-text text-center">$300.20</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
                 </div>
-        </section>    
-        
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="eyes" id="4"><i class="fa-solid fa-eye"></i></span>
+                    <img src="./assets/imagenes/card4.png" alt="" class="card assets/imagenes-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Modern Chair</h3>
+                        <p class="card-text text-center">$500.50</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    </main>
+
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="eyes" id="5"><i class="fa-solid fa-eye"></i></span>
+                    <img src="./assets/imagenes/card5.png" alt="" class="card assets/imagenes-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Best Sofa</h3>
+                        <p class="card-text text-center">$200.50</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="eyes" id="6"><i class="fa-solid fa-eye"></i></span>
+                    <img src="./assets/imagenes/card6.png" alt="" class="card assets/imagenes-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Sofa Chair</h3>
+                        <p class="card-text text-center">$100.50</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="eyes" id="7"><i class="fa-solid fa-eye"></i></span>
+                    <img src="./assets/imagenes/card1.png" alt="" class="card assets/imagenes-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Table Chair</h3>
+                        <p class="card-text text-center">$150.50</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <span class="eyes" id="8"><i class="fa-solid fa-eye"></i></span>
+                    <img src="./assets/imagenes/card1.png" alt="" class="card assets/imagenes-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Hanging Chair</h3>
+                        <p class="card-text text-center">$500.60</p>
+                        <div id="btn3"><button>Pedir ahora</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card3 -->
+
+    <!-- about -->
+    <div class="container borrar">
+        <h1 class="text-center" style="margin-top: 50px;">Sobre nosotros</h1>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-6 py-3 py-md-0">
+                <div class="card">
+                    <img src="./assets/imagenes/about.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 py-3 py-md-0">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, saepe possimus quo,Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quibusdam, alias aut molestias vero necessitatibus aperiam, nemo voluptas quaerat unde eum eaque provident </p>
+                
+            </div>
+        </div>
+    </div>
+    <!-- about -->
      
-    <footer id="footer">
-        <div class="footer-contacto">
-            <a><i class="fa-brands fa-whatsapp"></i> 1159382913</a>
-            <a><i class="fa-brands fa-instagram"></i> nakawé.muebles</a>
-        </div>          
+    <!-- footer -->
+    <footer id="footer" class="borrar">
+        <h1 class="text-center">Nakawé</h1>
+        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <div class="icons text-center">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-skype"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+       
     </footer>
+    <!-- footer -->
 
     <script src="https://kit.fontawesome.com/8fc89d70f3.js" crossorigin="anonymous"></script>
-    
-    <script src="./main.js" ></script>
-    <script src="./slider.js"></script>
+    <script src="slider.js"></script>
+    <script src="main.js"></script>
+    <script src="navegacion.js"></script>
 </body>
 </html>
