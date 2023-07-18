@@ -1,0 +1,33 @@
+.slider-contacto p {
+    font-size: 26px;    
+}
+.slider-contacto span{
+    font-size: 22px;
+}
+
+.slider-contacto button{
+    width: 120px;
+    height: 35px;
+}
+
+.aside__info-description p{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 8px;
+    
+}
+
+table{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+.rigth{
+    right: 200px;
+}
+.left{
+    left: 200px;
+}
+.close img{
+    display: none;
+}

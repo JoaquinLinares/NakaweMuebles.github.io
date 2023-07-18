@@ -3,11 +3,24 @@ window.addEventListener('hashchange',navigator,false)
 
 const borrar = document.querySelectorAll('.borrar')
 
-// variables para imagenes de seccion cosas nuevas
+// variables para imagenes de seccion cosas nuevas details
 const imguno = document.querySelector('.img-uno')
 const imgdos = document.querySelector('.img-dos')
 const imgtres = document.querySelector('.img-tres')
 const imgcuatro = document.querySelector('.img-cuatro')
+
+// variable titulo y precio para details
+const titleDetails = document.querySelector('.slider-title-p')
+const priceDetails = document.querySelector('#price')
+// variables caracteristicas para details
+const modelo = document.querySelector('.modelo')
+const marca = document.querySelector('.marca')
+const color = document.querySelector('.color')
+const material= document.querySelector('.material')
+const colorPatas = document.querySelector('.color-patas')
+const detalles = document.querySelector('.detalles')
+
+
 
 // imagenes para seccion de ver mas
 const vermasTitle = document.querySelector('.ver-mas-title')
@@ -54,8 +67,7 @@ function navigator(){
         HomePage()
     }
 
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    
 }
 
 function SeccionSillas(){
@@ -115,6 +127,8 @@ function SeccionSillas(){
     img8.setAttribute('src',productlist[0].image[3])
     vermasimg8.appendChild(img8)
 
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 
 function SeccionMuebles(){
@@ -174,7 +188,8 @@ function SeccionMuebles(){
     img8.setAttribute('src',productlist[0].image[3])
     vermasimg8.appendChild(img8)
 
-
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 
 function SeccionMesadas(){
@@ -234,7 +249,8 @@ function SeccionMesadas(){
     img8.setAttribute('src',productlist[0].image[3])
     vermasimg8.appendChild(img8)
 
-
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 
 
@@ -243,6 +259,8 @@ function imgDetails(){
     imgdos.innerHTML= ""
     imgtres.innerHTML= ""
     imgcuatro.innerHTML= ""
+    titleDetails.innerHTML= ""
+    priceDetails.innerHTML= ""
     
     asideimginfo.classList.remove('inactive')    
     moreproduct.classList.add('inactive')
@@ -256,7 +274,7 @@ function imgDetails(){
     img0.classList.add('slider--img')    
     img0.setAttribute('src', productlist[0].image[0])
     imguno.appendChild(img0)
-
+    
     const img1 = document.createElement('img')
     img1.classList.add('slider--img')    
     img1.setAttribute('src', productlist[0].image[1])
@@ -271,6 +289,17 @@ function imgDetails(){
     img3.classList.add('slider--img')    
     img3.setAttribute('src', productlist[0].image[3])
     imgcuatro.appendChild(img3)
+
+    titleDetails.innerHTML = productlist[0].name
+    priceDetails.innerHTML = productlist[0].price
+
+    modelo.innerHTML= productlist[0].modelo
+    marca.innerHTML= productlist[0].marca
+    color.innerHTML= productlist[0].color
+    material.innerHTML=productlist[0].material
+    colorPatas.innerHTML=productlist[0].colorPatas
+
+    detalles.innerHTML=productlist[0].detalle
     }   
 
     if(idImage == 2){
@@ -293,6 +322,17 @@ function imgDetails(){
         img3.classList.add('slider--img')    
         img3.setAttribute('src', productlist[1].image[3])
         imgcuatro.appendChild(img3)
+
+        titleDetails.innerHTML = productlist[0].name
+        priceDetails.innerHTML = productlist[0].price
+
+        modelo.innerHTML= productlist[0].modelo
+        marca.innerHTML= productlist[0].marca
+        color.innerHTML= productlist[0].color
+        material.innerHTML=productlist[0].material
+        colorPatas.innerHTML=productlist[0].colorPatas
+
+        detalles.innerHTML=productlist[0].detalle
     } 
 
     if(idImage == 3){
@@ -315,6 +355,17 @@ function imgDetails(){
             img3.classList.add('slider--img')    
             img3.setAttribute('src', productlist[2].image[3])
             imgcuatro.appendChild(img3)
+            
+            titleDetails.innerHTML = productlist[0].name
+            priceDetails.innerHTML = productlist[0].price
+
+            modelo.innerHTML= productlist[0].modelo
+            marca.innerHTML= productlist[0].marca
+            color.innerHTML= productlist[0].color
+            material.innerHTML=productlist[0].material
+            colorPatas.innerHTML=productlist[0].colorPatas
+
+            detalles.innerHTML=productlist[0].detalle
     } 
 
     if(idImage == 4){
@@ -337,6 +388,17 @@ function imgDetails(){
                 img3.classList.add('slider--img')    
                 img3.setAttribute('src', productlist[3].image[3])
                 imgcuatro.appendChild(img3)
+                
+                titleDetails.innerHTML = productlist[0].name
+                priceDetails.innerHTML = productlist[0].price
+
+                modelo.innerHTML= productlist[0].modelo
+                marca.innerHTML= productlist[0].marca
+                color.innerHTML= productlist[0].color
+                material.innerHTML=productlist[0].material
+                colorPatas.innerHTML=productlist[0].colorPatas
+
+                detalles.innerHTML=productlist[0].detalle
      } 
 
     if(idImage == 5){
@@ -359,6 +421,17 @@ function imgDetails(){
         img3.classList.add('slider--img')    
         img3.setAttribute('src', productlist[0].image[3])
         imgcuatro.appendChild(img3)
+
+        titleDetails.innerHTML = productlist[0].name
+        priceDetails.innerHTML = productlist[0].price
+
+        modelo.innerHTML= productlist[0].modelo
+        marca.innerHTML= productlist[0].marca
+        color.innerHTML= productlist[0].color
+        material.innerHTML=productlist[0].material
+        colorPatas.innerHTML=productlist[0].colorPatas
+
+        detalles.innerHTML=productlist[0].detalle
     }
 
     if(idImage == 6){
@@ -381,6 +454,17 @@ function imgDetails(){
         img3.classList.add('slider--img')    
         img3.setAttribute('src', productlist[1].image[3])
         imgcuatro.appendChild(img3)
+
+        titleDetails.innerHTML = productlist[0].name
+        priceDetails.innerHTML = productlist[0].price
+
+        modelo.innerHTML= productlist[0].modelo
+        marca.innerHTML= productlist[0].marca
+        color.innerHTML= productlist[0].color
+        material.innerHTML=productlist[0].material
+        colorPatas.innerHTML=productlist[0].colorPatas
+
+        detalles.innerHTML=productlist[0].detalle
     }   
     if(idImage == 7){
         const img0 = document.createElement('img')
@@ -402,6 +486,17 @@ function imgDetails(){
         img3.classList.add('slider--img')    
         img3.setAttribute('src', productlist[3].image[3])
         imgcuatro.appendChild(img3)
+
+        titleDetails.innerHTML = productlist[0].name
+        priceDetails.innerHTML = productlist[0].price
+
+        modelo.innerHTML= productlist[0].modelo
+        marca.innerHTML= productlist[0].marca
+        color.innerHTML= productlist[0].color
+        material.innerHTML=productlist[0].material
+        colorPatas.innerHTML=productlist[0].colorPatas
+
+        detalles.innerHTML=productlist[0].detalle
     } 
     if(idImage == 8){
         const img0 = document.createElement('img')
@@ -423,6 +518,17 @@ function imgDetails(){
         img3.classList.add('slider--img')    
         img3.setAttribute('src', productlist[3].image[3])
         imgcuatro.appendChild(img3)
+
+        titleDetails.innerHTML = productlist[0].name
+        priceDetails.innerHTML = productlist[0].price
+
+        modelo.innerHTML= productlist[0].modelo
+        marca.innerHTML= productlist[0].marca
+        color.innerHTML= productlist[0].color
+        material.innerHTML=productlist[0].material
+        colorPatas.innerHTML=productlist[0].colorPatas
+
+        detalles.innerHTML=productlist[0].detalle
     } 
     // eyes de seccion de ver mas
     if(idImage == 'aside-1'){
@@ -445,6 +551,17 @@ function imgDetails(){
         img3.classList.add('slider--img')    
         img3.setAttribute('src', productlist[0].image[3])
         imgcuatro.appendChild(img3)
+
+        titleDetails.innerHTML = productlist[0].name
+        priceDetails.innerHTML = productlist[0].price
+
+        modelo.innerHTML= productlist[0].modelo
+        marca.innerHTML= productlist[0].marca
+        color.innerHTML= productlist[0].color
+        material.innerHTML=productlist[0].material
+        colorPatas.innerHTML=productlist[0].colorPatas
+
+        detalles.innerHTML=productlist[0].detalle
         }   
     
         if(idImage == 'aside-2'){
@@ -467,6 +584,17 @@ function imgDetails(){
             img3.classList.add('slider--img')    
             img3.setAttribute('src', productlist[1].image[3])
             imgcuatro.appendChild(img3)
+
+            titleDetails.innerHTML = productlist[0].name
+            priceDetails.innerHTML = productlist[0].price
+
+            modelo.innerHTML= productlist[0].modelo
+            marca.innerHTML= productlist[0].marca
+            color.innerHTML= productlist[0].color
+            material.innerHTML=productlist[0].material
+            colorPatas.innerHTML=productlist[0].colorPatas
+
+            detalles.innerHTML=productlist[0].detalle
         } 
     
         if(idImage == 'aside-3'){
@@ -489,6 +617,17 @@ function imgDetails(){
                 img3.classList.add('slider--img')    
                 img3.setAttribute('src', productlist[2].image[3])
                 imgcuatro.appendChild(img3)
+
+                titleDetails.innerHTML = productlist[0].name
+                priceDetails.innerHTML = productlist[0].price
+
+                modelo.innerHTML= productlist[0].modelo
+                marca.innerHTML= productlist[0].marca
+                color.innerHTML= productlist[0].color
+                material.innerHTML=productlist[0].material
+                colorPatas.innerHTML=productlist[0].colorPatas
+
+                detalles.innerHTML=productlist[0].detalle
         } 
     
         if(idImage == 'aside-4'){
@@ -511,6 +650,17 @@ function imgDetails(){
                     img3.classList.add('slider--img')    
                     img3.setAttribute('src', productlist[3].image[3])
                     imgcuatro.appendChild(img3)
+
+                    titleDetails.innerHTML = productlist[0].name
+                    priceDetails.innerHTML = productlist[0].price
+
+                    modelo.innerHTML= productlist[0].modelo
+                    marca.innerHTML= productlist[0].marca
+                    color.innerHTML= productlist[0].color
+                    material.innerHTML=productlist[0].material
+                    colorPatas.innerHTML=productlist[0].colorPatas
+
+                    detalles.innerHTML=productlist[0].detalle
          } 
     
         if(idImage == 'aside-5'){
@@ -533,6 +683,17 @@ function imgDetails(){
             img3.classList.add('slider--img')    
             img3.setAttribute('src', productlist[0].image[3])
             imgcuatro.appendChild(img3)
+
+            titleDetails.innerHTML = productlist[0].name
+            priceDetails.innerHTML = productlist[0].price
+
+            modelo.innerHTML= productlist[0].modelo
+            marca.innerHTML= productlist[0].marca
+            color.innerHTML= productlist[0].color
+            material.innerHTML=productlist[0].material
+            colorPatas.innerHTML=productlist[0].colorPatas
+
+            detalles.innerHTML=productlist[0].detalle
         }
     
         if(idImage == 'aside-6'){
@@ -555,6 +716,17 @@ function imgDetails(){
             img3.classList.add('slider--img')    
             img3.setAttribute('src', productlist[1].image[3])
             imgcuatro.appendChild(img3)
+
+            titleDetails.innerHTML = productlist[0].name
+            priceDetails.innerHTML = productlist[0].price
+
+            modelo.innerHTML= productlist[0].modelo
+            marca.innerHTML= productlist[0].marca
+            color.innerHTML= productlist[0].color
+            material.innerHTML=productlist[0].material
+            colorPatas.innerHTML=productlist[0].colorPatas
+
+            detalles.innerHTML=productlist[0].detalle
         }   
         if(idImage == 'aside-7'){
             const img0 = document.createElement('img')
@@ -576,6 +748,17 @@ function imgDetails(){
             img3.classList.add('slider--img')    
             img3.setAttribute('src', productlist[3].image[3])
             imgcuatro.appendChild(img3)
+
+            titleDetails.innerHTML = productlist[0].name
+            priceDetails.innerHTML = productlist[0].price
+
+            modelo.innerHTML= productlist[0].modelo
+            marca.innerHTML= productlist[0].marca
+            color.innerHTML= productlist[0].color
+            material.innerHTML=productlist[0].material
+            colorPatas.innerHTML=productlist[0].colorPatas
+
+            detalles.innerHTML=productlist[0].detalle
         } 
         if(idImage == 'aside-8'){
             const img0 = document.createElement('img')
@@ -597,8 +780,21 @@ function imgDetails(){
             img3.classList.add('slider--img')    
             img3.setAttribute('src', productlist[3].image[3])
             imgcuatro.appendChild(img3)
+
+            titleDetails.innerHTML = productlist[0].name
+            priceDetails.innerHTML = productlist[0].price
+
+            modelo.innerHTML= productlist[0].modelo
+            marca.innerHTML= productlist[0].marca
+            color.innerHTML= productlist[0].color
+            material.innerHTML=productlist[0].material
+            colorPatas.innerHTML=productlist[0].colorPatas
+
+            detalles.innerHTML=productlist[0].detalle
         } 
 
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
 }
 
 function HomePage(){
