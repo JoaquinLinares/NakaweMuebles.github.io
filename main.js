@@ -44,6 +44,9 @@ const asideimginfo = document.querySelector('.aside-info')
 
 const cruzCerrar = document.querySelector('.close')
 
+const menuDesplegable = document.querySelector('.container-img-boton')
+const menu = document.querySelector('.boton-desplegable')
+
 const buttonVerMasSillas = document.querySelector("#sillas")
 buttonVerMasSillas.addEventListener('click', () => {location.hash= 'sillas='} )
 
@@ -60,6 +63,20 @@ cruzCerrar.addEventListener('click', () => {
     // location.hash='home'  
     history.back();   
 })
+
+menuDesplegable.addEventListener('click', () => {menu.classList.toggle('inactive')})
+const nuevo = document.querySelector('.menu-nuevo')
+nuevo.addEventListener("click", () => {menu.classList.add('inactive')})
+const servicios = document.querySelector('.menu-servicios')
+servicios.addEventListener("click", () => {menu.classList.add('inactive')})
+const productos = document.querySelector('.menu-productos')
+productos.addEventListener("click", () => {menu.classList.add('inactive')})
+const nosotros = document.querySelector('.menu-nosotros')
+nosotros.addEventListener("click", () => {menu.classList.add('inactive')})
+const what = document.querySelector('.menu-what')
+what.addEventListener("click", () => {menu.classList.add('inactive')})
+const insta = document.querySelector('.menu-insta')
+insta.addEventListener("click", () => {menu.classList.add('inactive')})
 
 
 const productlist = [];
